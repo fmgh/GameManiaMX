@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<head>
+    <link rel="icon" type="image/png" href="imagenes/control.png">
+    <title>GameMania - La capital del 2D</title>
+
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="description" content="GameMania - Portal de un curso para creacion de videojuegos 2D"/>
+    <meta name="keywords" content="arcade, videojuegos, curso" />
+    <meta name="author" content="Fabian Garcia" />
+    <meta name="copyright" content="Fabian Garcia" />
+
+    <!-- Layout multi-dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!-- Bulma Framework -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"/>
+
+    <!-- Font Awesome icons -->
+    <script src="https://kit.fontawesome.com/bf915a87f0.js" crossorigin="anonymous"></script>
+
+    <!-- jQuery Framework -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <style>
+        #header-logo{
+            background: url(imagenes/LogoMain.png) no-repeat center center;
+            background-size: cover;
+            width: 250px
+            }
+        body{
+            padding-top: 10%;
+            padding-left: 10%;
+            padding-right: 10%;
+            background-image: url(imagenes/arcade_bg.jpg);
+        }
+        #contenedor-main{
+            background-color: white;
+            border: black;
+            border-width: 3px;
+            border-style: solid;
+            margin-bottom: 5%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="contenedor-main">
+        <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+
+            <!-- Marca / Logotipo + Hamburguer symbol -->
+            <div class="navbar-brand">
+                <a id="header-logo" class="navbar-item" href=".">
+                    <!-- <img src="imagenes/LogoMain.png" width="112" height="28"> -->
+                </a>
+            
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+    
+            <!-- Menu -->
+            <!--<div class="container">-->
+                <div id="navMenu" class="navbar-menu">
+    
+                    <!-- Nav START -->
+                    <div class="navbar-start">
+                        <a class="navbar-item" href="#inicio">
+                            Inicio
+                        </a>
+                        <a class="navbar-item" href="#GM-Store">
+                            GM-Store
+                        </a>
+                        <a class="navbar-item" href="#SobreGM">
+                            Sobre GM
+                        </a>
+                        <a class="navbar-item" href="#contacto">
+                            Contacto
+                        </a>
+                    </div>
+    
+                    <!-- Nav END -->
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <a class="button is-link" target="_blank" href="recursos/CV - Perfil LinkedIn.pdf">
+                                <span class="icon"><i class="fas fa-sign-in-alt"></i></span>
+                                <span>Iniciar Sesion</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            <!--</div>-->
+        </nav>
+
+        <section class="section is-medium">
+            <div class="content is-normal">
+                <h1>¡Bienvenido!</h1>
+                <p><a href=""><strong>Game Manía</strong></a> Un lugar donde podrás aprender a crear video juegos y jugar juegos en 2D sin límites, sin molesta publicidad, desde tu PC, Tablet o Celular.</p>
+            </div>
+        </section>
+
+        <hr style="border-top: 3px dashed #bbb">
+
+        <section class="section">
+            <div class="content is-normal">
+                <h1 class="title">Te presentamos Tripulación EPR-21</h1>
+                <p class="subtitle"><font color="#000B60"><b>El primer video juego de naves en 2D desarrollado en un taller virtual de la Escuela Preparatoria de Rioverde, A.C. de Rioverde S.L.P. Mx.</b></font></p>
+                <p style="text-align: justify">Año 2031 se ha descubierto vida en otros planetas, con civilizaciones que se están extinguiendo por la contaminación y factores sociales propios de ese esos planetas, la ONU, de la mano de las potencias mundiales han selecciona a tripulantes especialistas en los ODS, a esta tripulación la llamo “Tripulación EPR-21” y tiene como misión dar a conocer los ODS a esos planetas, para de esta manera evitar su extinción, como lo hicieron con el planeta tierra en el año 2030 y poder esta manera compartir con otros planetas el conocimiento que el universo oculta.</p>
+                <p>¿Podrá la “Tripulación EPR-21” llevar los ODS a otros planetas?</p>
+                <p><span style="text-align: center;display: block;"> <!-- Inline parent element -->
+                    <img src="imagenes/naves.gif" alt="Tripulación EPR-21 Gameplay">
+                </span></p>
+            </div>
+
+            <div class="container">
+                <div class="buttons has-addons is-centered">
+                    <a class="button is-info is-rounded" target="_blank" href="https://twitter.com/intent/tweet?text=¿Podrá la “Tripulación EPR-21” llevar los ODS a otros planetas? ¡Juega ya! &amp;hashtags=HechoEnMéxico,ConAmorDesdeSLP&amp;url=http://gamemania.com.mx/verjuego.php?cod=3&amp;">
+                        <span class="icon"><i class="fab fa-twitter"></i></span>
+                        <span>Re-Tweet</span>
+                    </a>
+                    <a class="button is-success is-rounded" target="_blank" href="http://gamemania.com.mx/verjuego.php?cod=3">
+                        <span class="icon"><i class="fas fa-download"></i></span> 
+                        <span>¡Descargar y jugar!</span>
+                    </a>
+                </div>
+            </div>
+        </section> 
+
+        <hr style="border-top: 3px dashed #bbb">
+
+        <section class="section">
+            <div class="content is-normal">
+                <h1 class="title">Curso de desarrollo</h1>
+                <p class="subtitle"><font color="#000B60"><b>¿Deseas crear video juegos desde cero? ¡Tenemos los que necesitas!</b></font></p>
+                <p style="text-align: justify">Unete a nuestro curso de desarrollo de videojuegos 2D donde, ademas de ayudarte a desarrollarte como creador de videojuegos, te ofrecemos publicar tu juego en nuestro sitio y si lo deseas, ayudarte a publicarlo en <b>PlayStore de Google</b></p>
+                <p><span style="text-align: center;display: block;"> <!-- Inline parent element -->
+                    <img src="imagenes/curso.png" alt="Curso Desarrollo Juegos" width="500px" height="300px;">
+                </span></p>
+            </div>
+        </section>
+        <hr style="border-top: 3px dashed #bbb">
+    </div>
+
+    <!-- Pie de Pagina -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <p>El sitio web de <strong>GameMania 2.0</strong> ha sido desarrollado por <b><a href="https://www.facebook.com/AvenaSoft/">AvenaSoft&#174;</a></b>.</p>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Menu para moviles version JQuery Framework
+        $(document).ready(function() {
+            // Check for click events on the navbar burger icon
+            $(".navbar-burger").click(function() {
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                $(".navbar-burger").toggleClass("is-active");
+                $(".navbar-menu").toggleClass("is-active");
+
+            });            
+        });
+    </script>
+</body>
