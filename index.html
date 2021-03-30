@@ -25,12 +25,12 @@
         #header-logo{
             background: url(imagenes/LogoMain.png) no-repeat center center;
             background-size: cover;
-            width: 250px
+            width: 225px
             }
         body{
             padding-top: 10%;
-            padding-left: 10%;
-            padding-right: 10%;
+            padding-left: 3%;
+            padding-right: 3%;
             background-image: url(imagenes/arcade_bg.jpg);
         }
         #contenedor-main{
@@ -39,6 +39,16 @@
             border-width: 3px;
             border-style: solid;
             margin-bottom: 5%;
+        }
+
+        @media only screen and (max-width: 768px) {
+            /* For mobile phones: */
+            body{
+                padding-top: 20%;
+                padding-left: 3%;
+                padding-right: 3%;
+                background-image: url(imagenes/arcade_bg.jpg);
+            }
         }
     </style>
 </head>
@@ -65,10 +75,10 @@
     
                     <!-- Nav START -->
                     <div class="navbar-start">
-                        <a class="navbar-item" href="#inicio">
+                        <a class="navbar-item" href=".">
                             Inicio
                         </a>
-                        <a class="navbar-item" href="#GM-Store">
+                        <a class="navbar-item" href="gm-store.html">
                             GM-Store
                         </a>
                         <a class="navbar-item" href="#SobreGM">
@@ -89,7 +99,6 @@
                         </div>
                     </div>
                 </div>
-            <!--</div>-->
         </nav>
 
         <section class="section is-medium">
@@ -142,7 +151,7 @@
     </div>
 
     <!-- Pie de Pagina -->
-    <footer class="footer">
+    <footer class="footer" style="padding: 3rem 1.5rem 2rem;">
         <div class="content has-text-centered">
             <p>
                 <p>El sitio web de <strong>GameMania 2.0</strong> ha sido desarrollado por <b><a href="https://www.facebook.com/AvenaSoft/">AvenaSoft&#174;</a></b>.</p>
