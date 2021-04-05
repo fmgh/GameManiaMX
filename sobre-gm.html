@@ -63,7 +63,7 @@
         /* Seccion de Titulo */
         /*#region*/
         #SeccionTitulo {
-            background-color: rgba(219, 10, 3, 0.9);
+            background-color: rgba(142, 33, 156, 0.9);
             border-bottom: 3px solid black;
             border-radius: 1em 1em 0em 0em;
         }
@@ -105,19 +105,18 @@
 
         /*#endregion*/
 
-        /* Seccion de Curso */
-        #SeccionCurso {
-            background-color: rgba(245, 245, 245, 0.9);
-            border-bottom: 3px solid black;
-        }
-
-        #SeccionTripulacion {
+        /* Seccion Sobre GM */
+        #SeccionSobreGM {
             background-color: rgba(245, 245, 245, 0.9);
             border-bottom: 3px solid black;
         }
 
         #ColorSubtitulo {
             color: #000B60;
+        }
+
+        #TextoCita {
+            background-color: rgba(245, 245, 245, 0.3);
         }
 
         @media only screen and (max-width: 768px) {
@@ -155,10 +154,10 @@
 
                 <!-- Nav START -->
                 <div class="navbar-start">
-                    <a class="navbar-item" href=".">
+                    <a class="navbar-item" href="index.html">
                         Inicio
                     </a>
-                    <a class="navbar-item" href="gm-store.html">
+                    <a class="navbar-item" href=".">
                         GM-Store
                     </a>
                     <a class="navbar-item" href="sobre-gm.html">
@@ -185,81 +184,86 @@
         <section id="SeccionTitulo" class="section is-flex is-justify-content-center">
             <div class="notification is-flex is-justify-content-center">
                 <div id="TituloContent" class="content">
-                    <h1 class="title">¡Bienvenido a <b id="LetraG">G</b><b id="LetraA">A</b><b id="LetraM">M</b><b
-                            id="LetraE">E</b><b id="PalabraMania"><u>MANIA</u></b>!
-                    </h1>
+                    <h1 class="title"><b id="LetraG">G</b><b id="LetraA">A</b><b id="LetraM">M</b><b id="LetraE">E</b><b
+                            id="PalabraMania"><u>MANIA</u></b></h1>
                     <p></p>
-                    <p class="subtitle">Un lugar donde podrás aprender a crear y jugar video juegos en 2D!</p>
-                    <p class="subtitle">Sin límites, sin publicidad y desde tu PC, Tablet o Celular ;)</p>
+                    <p class="subtitle">Un lugar virtual donde los usuarios pueden aprender, crear, publicar y vender
+                        sus video juegos.</p>
                 </div>
             </div>
         </section>
 
-        <!-- SECCION CURSO -->
-        <section id="SeccionCurso" class="section">
+        <!-- SECCION SOBRE GM -->
+        <section id="SeccionSobreGM" class="section">
             <div class="content">
-                <h1 class="title">Curso de desarrollo</h1>
-                <br>
-                <p class="subtitle">
-                    <b id="ColorSubtitulo">¿Deseas crear video juegos desde cero? ¡Tenemos lo que necesitas!</b>
+                <p>
+                    <b id="ColorSubtitulo">Game Manía</b> nace a partir de la necesidad de un espacio virtual
+                    que auxilie a los nuevos desarrolladores de video juegos a distribuir sus creaciones sin costos
+                    excesivos, pero al mismo tiempo con la posibilidad de aprender a distribuir sus creaciones en otras
+                    plataformas.
                 </p>
-                <p style="text-align: justify">Unete a nuestro curso de desarrollo de videojuegos 2D donde, ademas de
-                    ayudarte a desarrollarte como creador de videojuegos, te ofrecemos publicar tu juego en nuestro
-                    sitio y si lo deseas, ayudarte a publicarlo en <b>PlayStore de Google</b></p>
-                <p><span style="text-align: center; display: block;">
-                        <img src="img/curso.png" alt="Curso Desarrollo Juegos" width="500px" height="300px;">
-                    </span></p>
-            </div>
-
-            <div class="container">
-                <div class="buttons is-centered">
-                    <a class="button is-info" style="opacity: 1 !important;" target="_blank"
-                        href="http://gamemania.com.mx/login.php">
-                        <span class="icon"><i class="fas fa-gamepad" style="transform: rotate(315deg);"></i></span>
-                        <span>¡Registrate ya!</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECCION TRIPULACION EPR-21 -->
-        <section id="SeccionTripulacion" class="section">
-            <div class="content">
-                <h1 class="title">Te presentamos Tripulación EPR-21</h1>
                 <br>
-                <p class="subtitle">
-                    <b id="ColorSubtitulo">El primer video juego de naves en 2D desarrollado en un taller virtual de
-                        la Escuela Preparatoria de Rioverde, A.C. de Rioverde S.L.P. Mx.</b>
-                </p>
-                <p style="text-align: justify">Año 2031 se ha descubierto vida en otros planetas, con civilizaciones que
-                    se están extinguiendo por la contaminación y factores sociales propios de ese esos planetas, la ONU,
-                    de la mano de las potencias mundiales han selecciona a tripulantes especialistas en los ODS, a esta
-                    tripulación la llamo “Tripulación EPR-21” y tiene como misión dar a conocer los ODS a esos planetas,
-                    para de esta manera evitar su extinción, como lo hicieron con el planeta tierra en el año 2030 y
-                    poder esta manera compartir con otros planetas el conocimiento que el universo oculta.</p>
-                <p>¿Podrá la “Tripulación EPR-21” llevar los ODS a otros planetas?</p>
-                <p><span style="text-align: center;display: block;">
-                        <img src="img/naves.gif" alt="Tripulación EPR-21 Gameplay">
-                    </span></p>
-            </div>
-
-            <div class="container">
-                <div class="buttons is-centered">
-                    <a class="button is-info is-rounded" style="opacity: 1 !important;" target="_blank"
-                        href="https://twitter.com/intent/tweet?text=¿Podrá la “Tripulación EPR-21” llevar los ODS a otros planetas? ¡Juega ya! &amp;hashtags=HechoEnMéxico,ConAmorDesdeSLP&amp;url=http://gamemania.com.mx/verjuego.php?cod=3&amp;">
-                        <span class="icon"><i class="fab fa-twitter"></i></span>
-                        <span>Re-Tweet</span>
-                    </a>
-                    <a class="button is-success is-rounded" style="opacity: 1 !important;" target="_blank"
-                        href="http://gamemania.com.mx/verjuego.php?cod=3">
-                        <span class="icon"><i class="fas fa-download"></i></span>
-                        <span>¡Descargar y jugar!</span>
-                    </a>
-                </div>
+                <p class="subtitle">¿Estás listo para ser parte de este proyecto?</p>
+                <br>
+                <blockquote id="TextoCita">
+                    <p style="text-align: justify">El objetivo de este proyecto se simplifica en tres 3 sencillos
+                        conceptos:</p>
+                    <ul>
+                        <li>Ser pionero en el desarrollo de video juegos de creación nacional.</li>
+                        <li>Dar soporte a todos nuestros usuarios para aprender a desarrollar en nuevas tecnologías en
+                            el desarrollo de video juegos.</li>
+                        <li>Impulsar a nuestros usuarios en su desarrollo profesional.</li>
+                    </ul>
+                    <br>
+                    <p style="text-align: justify">Fases del proyecto:</p>
+                    <ul>
+                        <li>Comenzar con plataformas de desarrollo en 2D.</li>
+                        <li>Especialización de nuevas tecnologías y motores de desarrollo de video juegos.</li>
+                        <li>Crear video juegos profesionales en 2D y 3D.</li>
+                    </ul>
+                </blockquote>
+                <br>
+                <p><b><u>Misión de la plataforma:</u></b></p>
+                <p style="text-align: justify;">Ser una herramienta facilitadora para el profesionalismo de nuestros
+                    usuarios en el desarrollo de video juegos, actualizando los cursos, creando una comunidad nacional
+                    fuerte y sólida que interactúa y se enriquece así misma.</p>
+                <br>
+                <p><b><u>Visión de la plataforma:</u></b></p>
+                <p style="text-align: justify;">Ser una plataforma forma líder en el desarrollo y distribución de video
+                    juegos, incorporando tecnologías nuevas en los cursos de nuestra comunidad desarrolladora.</p>
             </div>
         </section>
 
     </div>
+
+    <!-- SECCION SOBRE EL CREADOR -->
+    <div class="container">
+        <section class="section" style="background-color: rgba(82, 0, 189, 0.9);">
+            <div class="notification" style="background-color: rgba(245,245,245, 0.9);">
+                <div class="columns">
+                    <div class="column is-3 is-flex is-align-content-center is-justify-content-center">
+                            <img src="img/me.png" alt="GameManiaMX Creator - Juan Manuel Hernandez Martinez">
+                    </div>
+    
+                    <div class="column">
+                        <div class="container" style="text-align:justify;">
+                            <p>
+                                Hola mi nombre es <b style="color: firebrick;">Juan Manuel Martínez Hernández</b>, ingeniero de profesión, pero siempre me he apasionado por el desarrollo de plataformas en diferentes lenguajes de programación, hoy tengo la oportunidad de trabajar para la <font color="#000B60"><b>Escuela Preparatoria de Rioverde, A.C.</b></font> en la cual tengo la oportunidad de impartir un taller de desarrollo de video juego, de donde básicamente surgió esta idea al estar impartiendo el taller y esa razón por la que todos los alumnos activos de la institución tendrán acceso ilimitado a este espacio.
+                            </p>
+                            <br>
+                            <p style="text-align: center;"><b id="ColorSubtitulo">¡Bienvenido a Game Manía!</b></p>
+                            <p style="text-align: center;"><b id="ColorSubtitulo">La capital del 2D.</b></p>
+                            <br>
+                            <p>Ing. Juan Manuel Martinez Hernández</p>
+                            <p>Dirección General Game Manía</p>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </section>
+    </div>
+
+    <br><br><br>
 
     <!-- PIE DE PAGINA -->
     <footer class="footer" style="padding: 3rem 1.5rem 2rem;">

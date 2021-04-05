@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="icon" type="image/png" href="img/control.png">
+    <title>GameMania - La capital del 2D</title>
+
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="description" content="GameMania - Portal de un curso para creacion de videojuegos 2D" />
+    <meta name="keywords" content="arcade, videojuegos, curso, cardenas, desarrollo, avenasoft, reynosa" />
+    <meta name="author" content="Fabian Garcia" />
+    <meta name="copyright" content="Fabian Garcia" />
+
+    <!-- Layout multi-dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bulma Framework -->
+    <link type="text/css" rel="stylesheet" href="css/bulma.min.css" />
+
+    <!-- Font Awesome icons -->
+    <script src="https://kit.fontawesome.com/bf915a87f0.js" crossorigin="anonymous"></script>
+
+    <!-- jQuery Framework -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    
+    <!-- jQuery validation form  -->
+    <script src="js/jquery.validate.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="css/debug.css"> -->
+
+    <style>
+        @font-face {
+            font-family: arcade-classic;
+            src: url("font/ArcadeClassic.ttf") format("woff"),
+                url("font/ArcadeClassic.ttf") format("opentype"),
+                url("font/ArcadeClassic.ttf") format("truetype");
+        }
+
+        @font-face {
+            font-family: arcadepix-plus-regular;
+            src: url("font/ArcadepixPlusRegular.ttf") format("woff"),
+                url("font/ArcadepixPlusRegular.ttf") format("opentype"),
+                url("font/ArcadepixPlusRegular.ttf") format("truetype");
+        }
+
+        /* NavBar Imagen */
+        #header-logo {
+            background: url(img/LogoMain.png) no-repeat center center;
+            background-size: cover;
+            width: 225px
+        }
+
+        /* Fondo de la pagina */
+        body {
+            background-image: url(img/arcade_bg.jpg);
+            padding-top: 10%;
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+
+        #ContenedorPrincipal {
+            border: 3px solid black;
+            margin-bottom: 5%;
+            border-radius: 1em;
+        }
+
+        /* Seccion de Titulo */
+        /*#region*/
+        #SeccionTitulo {
+            background-color: rgba(206, 203, 28, 0.9);
+            border-bottom: 3px solid black;
+            border-radius: 1em 1em 0em 0em;
+        }
+
+        #TituloContent {
+            background-color: rgba(245, 245, 245, 0.9);
+            text-align: center;
+        }
+
+        #LetraG {
+            color: yellow;
+            font-family: arcade-classic;
+            font-size: x-large;
+        }
+
+        #LetraA {
+            color: dodgerblue;
+            font-family: arcade-classic;
+            font-size: x-large;
+        }
+
+        #LetraM {
+            color: green;
+            font-family: arcade-classic;
+            font-size: x-large;
+        }
+
+        #LetraE {
+            color: hotpink;
+            font-family: arcade-classic;
+            font-size: x-large;
+        }
+
+        #PalabraMania {
+            color: darkred;
+            font-family: arcadepix-plus-regular;
+            font-size: xx-large;
+        }
+
+        /*#endregion*/
+
+        /* Seccion Contact */
+        #SeccionContacto {
+            background-color: rgba(245, 245, 245, 0.9);
+            border-bottom: 3px solid black;
+        }
+
+        #ColorSubtitulo {
+            color: #000B60;
+        }
+
+        #TextoCita {
+            background-color: rgba(245, 245, 245, 0.3);
+        }
+
+        .hero.has-background {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-background {
+            position: absolute;
+            object-fit: cover;
+            object-position: center center;
+            width: 100%;
+            height: 100%;
+        }
+
+        .hero-background.is-transparent {
+            opacity: 0.8;
+        }
+
+        @media only screen and (max-width: 768px) {
+
+            /* For mobile phones: */
+            body {
+                background-image: url(img/arcade_bg.jpg);
+                padding-top: 20%;
+                padding-left: 3%;
+                padding-right: 3%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="ContenedorPrincipal" class="container">
+
+        <!-- NAVBAR -->
+        <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+
+            <!-- Marca / Logotipo + Hamburguer symbol -->
+            <div class="navbar-brand">
+                <a id="header-logo" class="navbar-item" href="javascript:window.location.reload();"></a>
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <!-- Menu -->
+            <div id="navMenu" class="navbar-menu">
+
+                <!-- Nav START -->
+                <div class="navbar-start">
+                    <a class="navbar-item" href="index.html">
+                        Inicio
+                    </a>
+                    <a class="navbar-item" href=".">
+                        GM-Store
+                    </a>
+                    <a class="navbar-item" href="sobre-gm.html">
+                        Sobre GM
+                    </a>
+                    <a class="navbar-item" href="contacto.html">
+                        Contacto
+                    </a>
+                </div>
+
+                <!-- Nav END -->
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <a class="button is-link" target="_blank" href="http://gamemania.com.mx/login.php">
+                            <span class="icon"><i class="fas fa-sign-in-alt"></i></span>
+                            <span>Iniciar Sesion</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- SECCION TITULO -->
+        <section id="SeccionTitulo" class="section is-flex is-justify-content-center">
+            <div class="notification is-flex is-justify-content-center">
+                <div id="TituloContent" class="content">
+                    <h1 class="title">Contacto <b id="LetraG">G</b><b id="LetraA">A</b><b id="LetraM">M</b><b id="LetraE">E</b><b
+                            id="PalabraMania"><u>MANIA</u></b></h1>
+                    <p></p>
+                    <p class="subtitle">¿Tienes dudas, comentarios o sugerencias?</p>
+                    <!-- <p>Envianos un mensaje y nos pondremos en contacto contigo lo antes posible.</p> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION FORMULARIO CONTACTO -->
+        <section class="hero has-background" style="border: 2px solid black">
+            <img alt="FabianGarcia" class="hero-background" style="opacity: 0.85;" src="https://media.istockphoto.com/vectors/pixel-video-game-abstract-seamless-background-vector-id1250539480?b=1&k=6&m=1250539480&s=612x612&w=0&h=FVEi-cUK8u9TmH7y7ziLV2VSOBcQH5Bp6Na94FEjjQ0=" />
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns is-centered">
+                        <div class="column is-three-fifths">
+                            <form class="box" id="contact-form" method="POST" onsubmit="return false;">
+                                <br>
+                                <p>Envianos un mensaje a traves de este formulario y nos pondremos en contacto contigo lo antes posible.</p>
+                                <br>
+
+                                <div class="field">
+                                    <label class="label">Nombre</label>
+                                    <div class="control">
+                                        <input id="iNombre" class="input is-info" type="input" name="_name" placeholder="e.g. John Doe" data-validation-error-msg="Olvido poner su nombre" required="" />
+                                        <!-- <input class="input" type="email" placeholder="e.g. alex@example.com"> -->
+                                    </div>
+                                </div>
+        
+                                <div class="field">
+                                    <label class="label">Asunto</label>
+                                    <div class="control">
+                                        <input id="iAsunto" class="input is-info" type="input" name="_subject" placeholder="e.g. Me gusta mucho tu pagina!" data-validation-error-msg="Olvido poner el asunto" required="" />
+                                        <!-- <input class="input" type="email" placeholder="e.g. alex@example.com"> -->
+                                    </div>
+                                </div>
+        
+                                <div class="field">
+                                    <label class="label">Email</label>
+                                    <div class="control">
+                                        <input id="iEmail" class="input is-info" type="email" name="_replyto" placeholder="e.g. alex@example.com" data-validation="email" data-validation-error-msg="Coloca un email valido" required="" />
+                                        <!-- <input class="input" type="email" placeholder="e.g. alex@example.com"> -->
+                                    </div>
+                                </div>
+                                
+                                <div class="field">
+                                    <label class="label">Mensaje</label>
+                                    <div class="control">
+                                        <textarea id="iMensaje" class="textarea is-info" name="message" rows="5" placeholder="Me gustaria cotizar una pagina similar..." data-validation-error-msg="Olvido poner el mensaje" required="" ></textarea>
+                                    </div>
+                                </div>
+        
+                                <button class="button is-primary" id="btnEnviarEmail" type="submit" >Enviar!</button>  
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background-color: rgba(219, 3, 165, 0.9); ">
+            <div class="notification" style="background-color: rgba(245,245,245, 0.9);">
+                <div class="columns">
+                    <div class="column">
+                        <div class="container" style="background-color: rgba(245,245,245, 0.9);">
+                            <div class="content is-centered" style="text-align: justify;">
+                                <h1 class="subtitle">Curso de desarrollo</h1>
+                                <br>
+                                <p>Si deseas tener un curso presencial o virtual para tu escuela, puedes contactarnos al siguiente correo electrónico: <a href="mailto:gamemania.soporte@gamemania.com.mx">gamemania.soporte@gamemania.com.mx</a> o puedes marcar al <b style="color:darkblue;">487 144 1107</b> </p>
+                            </div>
+                            <div class="content">
+                                <p><b style="color: darkred;">NOTA:</b> Este correo y número de teléfono lo puedes usar para contactar a la administración de y pagar tu membresía de manera más directa.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-3 is-flex" style="flex-direction: column; justify-content: center; align-items: center;">
+                        <img src="img/aprendizaje.jpg" alt="Niño en escuela" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="container" style="border: 3px solid black;">
+        <section class="section is-flex is-justify-content-center" style="background-color: rgba(33, 127, 156, 0.9);border-bottom: 3px solid black;">
+            <article class="notification is-flex is-justify-content-center">
+                <div style="background-color: rgba(245,245,245, 0.9); text-align: center;">
+                    <h1 class="title"><b>Sponsors & Production</b></h1>
+                    <p class="subtitle"><b style="color:yellow; font-family: arcade-classic; font-size:x-large;">G</b><b style="color:dodgerblue; font-family: arcade-classic; font-size:x-large;">A</b><b style="color: green; font-family: arcade-classic; font-size:x-large;">M</b><b style="color: hotpink; font-family: arcade-classic; font-size:x-large;">E</b><b style="color:darkred; font-family: arcadepix-plus-regular; font-size: xx-large;"><u>MANIA</u></b></p>
+                    <p></p>
+                    <p>Es una producción de <b style="color: darkblue;">Cardenas PC Servicio & Soporte Tecnico</b> y a el buscador de información <a href="http://eduvicar.com/" style="color: darkblue;">EduVicar</a></p>
+                    <img src="img/cardenas pc logo 1.png" alt="Cardenas PC Logotipo" width="300" height="121">
+                </div>
+            </article>
+        </section>
+    </div>
+
+    <br><br><br>
+
+    <!-- PIE DE PAGINA -->
+    <footer class="footer" style="padding: 3rem 1.5rem 2rem;">
+        <div class="content has-text-centered">
+            <p>El sitio web de <strong>GameMania &copy; 2.0</strong> ha sido desarrollado por <b><a
+                        href="https://www.facebook.com/AvenaSoft/">AvenaSoft&#174;</a></b></p>
+        </div>
+    </footer>
+
+    <script>
+        // Menu para moviles version JQuery Framework
+        $(document).ready(function () {
+            // Check for click events on the navbar burger icon
+            $(".navbar-burger").click(function () {
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                $(".navbar-burger").toggleClass("is-active");
+                $(".navbar-menu").toggleClass("is-active");
+
+            });
+
+            $("#contact-form").validate({
+                rules: {
+                    _name: "required",
+                    _subject: "required",
+                    _replyto: {
+                        required: true,
+                        email: true
+                            },
+                    message: {
+                        required: true
+                    }
+                },
+                messages: {
+                    _name: "Olvido poner su nombre",
+                    _subject: "Agrega el asunto de tu mensaje.",
+                    _replyto: "Un email valido me ayudaria a ponerme en contacto contigo",
+                    message:  "Olvidaste colocar tu mensaje."
+                }
+            });
+
+            $('#contact-form').submit(function(e){
+                // Stop the form actually posting
+                e.preventDefault();
+
+                // I want to be able to do the check here if the form has passed validation
+                if( $(this).valid() ) {
+                    //alert("siii");
+                    $.ajax({
+                        url: "https://formspree.io/f/xqkwkaqn",
+                        method: "POST",
+                        data: {
+                                message: "Nombre  : "+ $("#iNombre").val() +" \n" + 
+                                         "Asunto  : "+ $("#iAsunto").val() +" \n" + 
+                                            "Email   : "+ $("#iEmail").val() +" \n" +
+                                            "Mensaje : "+ $("#iMensaje").val()
+                                },
+                        dataType: "json",
+                        success: function(result) {
+                            alert('Gracias por tu mensaje, me pondre en contacto a la brevedad.');
+                            $("#contact-form").trigger("reset");
+                        }
+                    });
+                }
+
+            });
+
+        });
+    </script>
+</body>
