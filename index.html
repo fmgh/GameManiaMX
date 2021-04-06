@@ -290,6 +290,11 @@
     </footer>
 
     <script>
+        import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+
+        const el = document.createElement('pwa-update');
+        document.body.appendChild(el);
+
         // Menu para moviles version JQuery Framework
         $(document).ready(function () {
             // Check for click events on the navbar burger icon
@@ -300,6 +305,6 @@
                 $(".navbar-menu").toggleClass("is-active");
 
             });
-        });
+        });        
     </script>
 </body>
