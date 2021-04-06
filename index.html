@@ -43,7 +43,9 @@
     <meta name="theme-color" content="#ffffff">
     <script type="module" src="pwabuilder-sw-register.js"></script>
 
-    <!-- <link rel="stylesheet" href="css/debug.css"> -->
+    <!-- addToHomeScreen -->
+    <script src="js/addtohomescreen.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/addtohomescreen.css">
 
     <style>
         @font-face {
@@ -293,6 +295,7 @@
     <script>
         // Menu para moviles version JQuery Framework
         $(document).ready(function () {
+            addToHomescreen();
             // Check for click events on the navbar burger icon
             $(".navbar-burger").click(function () {
 
