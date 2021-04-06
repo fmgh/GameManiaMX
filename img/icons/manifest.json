@@ -5,7 +5,7 @@
   "background_color": "#fff",
   "display": "standalone",
   "orientation": "portrait",
-  "start_url": "/GameManiaMX/index.html",
+  "start_url": "https://fmgh.github.io/GameManiaMX/",
   "icons": [
     {
      "src": "android-icon-36x36.png",
