@@ -1,8 +1,8 @@
 {
-  "name": "GameManiaMX",
+  "name": "Powered by AvenaSoft&#174;",
   "short_name": "GameManiaMX",
   "theme_color": "#fff",
-  "background_color": "#fff",
+  "background_color": "#2196F3",
   "display": "standalone",
   "orientation": "portrait",
   "start_url": "https://fmgh.github.io/GameManiaMX/",

@@ -350,15 +350,14 @@
 
                 // I want to be able to do the check here if the form has passed validation
                 if( $(this).valid() ) {
-                    //alert("siii");
                     $.ajax({
                         url: "https://formspree.io/f/xqkwkaqn",
                         method: "POST",
                         data: {
                                 message: "Nombre  : "+ $("#iNombre").val() +" \n" + 
                                          "Asunto  : "+ $("#iAsunto").val() +" \n" + 
-                                            "Email   : "+ $("#iEmail").val() +" \n" +
-                                            "Mensaje : "+ $("#iMensaje").val()
+                                         "Email   : "+ $("#iEmail").val() +" \n" +
+                                         "Mensaje : "+ $("#iMensaje").val()
                                 },
                         dataType: "json",
                         success: function(result) {
